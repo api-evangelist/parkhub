@@ -16,6 +16,10 @@ deployment:
 tools_count: 1
 tools:
 - name: search_parking
-  description: ''
+  description: Search for available parking spaces near a location. Returns up to 10 spaces, each with
+    an id, name, distance, price, and rating. A missing location is the only reason to ask the user a
+    question before calling this tool — a missing date or
 tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
 authorship: provider
+descriptions_source: live tools/list (authorship probe or saved capture); filled by backfill-tools-from-authorship.py
+  --descriptions, 2026-09-28
